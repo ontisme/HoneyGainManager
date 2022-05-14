@@ -8,3 +8,6 @@
 
 # 效果圖
 ![image](https://user-images.githubusercontent.com/25722976/168449617-ec58c3df-04fa-4e9c-a7f0-a8a65bfcfa94.png)
+
+# 使用方式
+自己到網站取 Header 中的 Bearer 的 Token 部分，並丟到 config.json 下
