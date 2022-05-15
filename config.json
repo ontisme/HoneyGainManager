@@ -1,5 +1,6 @@
 {
   "token": [
     "replace your token here"
-  ]
+  ],
+  "auto_get_contest_winnings": true
 }

@@ -17,12 +17,12 @@ import honeygain_service
 def load_config():
     with open('config.json') as f:
         data = json.load(f)
-    return data["token"]
+    return data
 
 
 @config(theme="dark")
 def main():
-    for i in token:
+    for i in token["token"]:
         app = honeygain_service.HoneyGainManager(i)
         devices = app.get_devices()
         balance = app.get_jmpt_balance()
@@ -61,5 +61,6 @@ def event_loop():
 
 
 token = load_config()
-event_loop()
+if token["auto_get_contest_winnings"]:
+    event_loop()
 start_server(main, debug=True, port=8082, host="0.0.0.0")
