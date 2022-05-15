@@ -14,18 +14,40 @@ class HoneyGainManager():
 
     # 取得裝置資訊
     def get_devices(self):
-        url = self.host + "api/v2/devices"
-        ret = self.ses.get(url, headers=self.headers)
-        if ret:
-            return ret.json()['data']
-        else:
+        try:
+            url = self.host + "api/v2/devices"
+            ret = self.ses.get(url, headers=self.headers)
+            if ret:
+                return ret.json()['data']
+            else:
+                return None
+        except:
             return None
 
     # 取得JMPT餘額
     def get_jmpt_balance(self):
-        url = self.host + "api/v1/earnings/jt"
-        ret = self.ses.get(url, headers=self.headers)
-        if ret:
-            return ret.json()['data']
-        else:
+        try:
+            url = self.host + "api/v1/earnings/jt"
+            ret = self.ses.get(url, headers=self.headers)
+            if ret:
+                return ret.json()['data']
+            else:
+                return None
+        except:
             return None
+
+    # 取得蜜罐獎勵
+    def get_contest_winnings(self):
+        try:
+            url = self.host + "api/v1/contest_winnings"
+            ret = self.ses.get(url, headers=self.headers)
+            if ret:
+                j = ret.json()
+                if j['type'] == 403:
+                    return False
+                elif j['data']['credits'] > 0:
+                    return j['data']['credits']
+            else:
+                return False
+        except:
+            return False
