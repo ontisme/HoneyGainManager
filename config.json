@@ -1,6 +1,8 @@
 {
   "token": [
-    "replace your token here"
+    "repalce your token here"
   ],
-  "auto_get_contest_winnings": true
+  "auto_get_contest_winnings": true,
+  "dashboard_type": "honeygain"
 }
+

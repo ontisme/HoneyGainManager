@@ -6,6 +6,16 @@
 - [X] 支援多帳號
 - [X] 自動領取蜜罐
 
+可以修改 `config.json` 中的 `dashbaord_type` 參數來改變顯示方式
+支援的參數有
+* honeygain
+* jumptask
+
+`honeygain` 會顯示詳細的裝置資訊以及擁有的星點
+
+`jumptask` 僅顯示擁有的 JMPT 數量以及其總計美金價值
+
+### 請注意 `Honeygain` 與 `Jumptask` 的 `Token` 不同，但取得方式同理
 # 效果圖
 ![image](https://user-images.githubusercontent.com/25722976/168449617-ec58c3df-04fa-4e9c-a7f0-a8a65bfcfa94.png)
 
