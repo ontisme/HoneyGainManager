@@ -10,7 +10,12 @@
 ![image](https://user-images.githubusercontent.com/25722976/168449617-ec58c3df-04fa-4e9c-a7f0-a8a65bfcfa94.png)
 
 # 使用方式
-自己到網站取 Header 中的 Bearer 的 Token 部分，並丟到 config.json 下
+自己到網站取 `Header` 中的 `Bearer` 的 `Token` 部分，並丟到 `config.json` 下
+
+如不想自動領取蜜罐，請將 `config.json` 底下的 `auto_get_contest_winnings` 設置為 `false` 即可
 
 # 桌上版本
 如需已編譯版本可至 [Release](https://github.com/ontisme/HoneyGainManager/releases/tag/v1.0.1) 下載單獨執行文件
+
+# 什麼是HoneyGain?
+一個依賴你IP掛機賺錢的網站，每月收益10~20美金不等，有興趣的話可以使用我的[推薦連結](https://r.honeygain.me/ONTISAC9BA)
