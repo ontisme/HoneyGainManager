@@ -17,6 +17,8 @@ class HoneyGainManager():
         try:
             url = self.host + "api/v2/devices"
             ret = self.ses.get(url, headers=self.headers)
+            if ret.status_code >= 400:
+                return "Cookies失效"
             if ret:
                 return ret.json()['data']
             else:
