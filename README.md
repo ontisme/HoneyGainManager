@@ -16,3 +16,6 @@
 
 # 桌上版本
 如需已編譯版本可至 [Release](https://github.com/ontisme/HoneyGainManager/releases/tag/v1.0.1) 下載單獨執行文件
+
+# 什麼是HoneyGain?
+一個依賴你IP掛機賺錢的網站，每月收益10~20美金不等，有興趣的話可以使用我的[推薦連結](https://r.honeygain.me/ONTISAC9BA)
