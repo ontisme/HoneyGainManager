@@ -11,3 +11,6 @@
 
 # 使用方式
 自己到網站取 Header 中的 Bearer 的 Token 部分，並丟到 config.json 下
+
+# 桌上版本
+如需已編譯版本可至 [Release](https://github.com/ontisme/HoneyGainManager/releases/tag/v1.0.1) 下載單獨執行文件
